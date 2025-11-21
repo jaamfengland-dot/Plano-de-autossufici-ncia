@@ -3,30 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aplicação Interativa: Pilares do Desenvolvimento</title>
+    <title>Pilares do Desenvolvimento</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-    <!-- Chosen Palette: Calm Harmony -->
-    <!-- Application Structure Plan: The SPA is designed with a top-down narrative flow. It starts with a high-level hero section and a navigation bar for quick access. It proceeds to a grid of interactive cards, one for each pillar, allowing for detailed exploration. The application concludes with a structural diagram illustrating the synergy between the pillars, reinforcing the core strategic message of interconnectedness. This structure was chosen to guide the user from a macro overview to micro details and finally to a strategic synthesis, making it highly effective for a leadership audience. -->
-    <!-- Visualization & Content Choices: 1. Pillar Details -> Goal: Organize/Inform -> Viz: Styled Lists in Cards -> Interaction: Clickable navigation links -> Justification: Cards provide clear visual separation for thematic content, and lists are the most direct way to present the program topics. Method: HTML/Tailwind. 2. Pillar Synergy -> Goal: Show Relationships -> Viz: Flow Diagram -> Interaction: Static visual -> Justification: A simple, clean diagram built with HTML/CSS effectively communicates the strategic concept of synergy without requiring complex libraries, adhering to the no-SVG/Mermaid constraint. Method: HTML/Tailwind. -->
-    <!-- CONFIRMATION: NO SVG graphics used. NO Mermaid JS used. -->
     <style>
         body {
             font-family: 'Inter', sans-serif;
             background-color: #F8F9FA;
             color: #343A40;
-        }
-        .chart-container {
-            position: relative;
-            width: 100%;
-            max-width: 600px;
-            margin-left: auto;
-            margin-right: auto;
-            height: 40vh;
-            max-height: 450px;
         }
         .nav-link {
             transition: color 0.3s, border-bottom-color 0.3s;
@@ -55,39 +39,119 @@
 
     <main class="container mx-auto p-4 md:p-8">
         <div class="text-center py-12">
-            <h1 class="text-4xl md:text-5xl font-bold text-[#4361EE] mb-4">Plano Estratégico de Autossuficiência</h1>
-            <p class="text-lg text-gray-600 max-w-3xl mx-auto mb-10">Uma aplicação interativa para explorar os cinco pilares fundamentais para o desenvolvimento local, com sugestões de temas e tópicos para capacitação.</p>
+            <h1 class="text-4xl md:text-5xl font-bold text-[#4361EE] mb-4">Plano de Desenvolvimento Local</h1>
+            <p class="text-lg text-gray-600 max-w-3xl mx-auto mb-10">Explore os cinco pilares principais para o crescimento pessoal e comunitário, com sugestões de tópicos para capacitação.</p>
         </div>
 
         <div class="space-y-16 mt-10">
+
+            <!-- Educação -->
             <section id="educacao" class="scroll-mt-20">
                 <div class="bg-white rounded-lg shadow-lg p-8">
                     <h2 class="text-3xl font-bold text-[#4361EE] mb-4">🎓 Educação</h2>
-                    <p class="text-gray-600 mb-6">Fomentar o aprendizado contínuo como base para melhores oportunidades de emprego e crescimento pessoal, abrangendo desde a educação formal e técnica até o desenvolvimento religioso.</p>
+                    <p class="text-gray-600 mb-6">Aprendizado contínuo como base para oportunidades e crescimento pessoal, incluindo educação formal, técnica e desenvolvimento religioso.</p>
                     <ul class="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-4">
                         <li class="flex items-start"><span class="text-[#4361EE] font-bold mr-2">✔</span> Grupo "Educação para um Emprego Melhor"</li>
                         <li class="flex items-start"><span class="text-[#4361EE] font-bold mr-2">✔</span> Fundo Perpétuo de Educação e Bolsa Benson</li>
                         <li class="flex items-start"><span class="text-[#4361EE] font-bold mr-2">✔</span> EnglishConnect, Pathway e "Eduque-se"</li>
                         <li class="flex items-start"><span class="text-[#4361EE] font-bold mr-2">✔</span> Cursos técnicos e profissionalizantes</li>
-                        <li class="flex items-start"><span class="text-[#4361EE] font-bold mr-2">✔</span> Preparação para o ENEM e carreiras do futuro</li>
-                        <li class="flex items-start"><span class="text-[#4361EE] font-bold mr-2">✔</span> Educação religiosa (Seminário e Instituto)</li>
+                        <li class="flex items-start"><span class="text-[#4361EE] font-bold mr-2">✔</span> Preparação para ENEM e carreiras futuras</li>
+                        <li class="flex items-start"><span class="text-[#4361EE] font-bold mr-2">✔</span> Educação religiosa</li>
                     </ul>
                 </div>
             </section>
 
+            <!-- Emprego -->
             <section id="emprego" class="scroll-mt-20">
                 <div class="bg-white rounded-lg shadow-lg p-8">
                     <h2 class="text-3xl font-bold text-[#3A0CA3] mb-4">💼 Emprego</h2>
-                    <p class="text-gray-600 mb-6">Oferecer ferramentas práticas e orientação para a inserção no mercado de trabalho, desenvolvimento de carreira e comportamento profissional ético.</p>
+                    <p class="text-gray-600 mb-6">Orientação prática para entrar no mercado de trabalho e progredir na carreira.</p>
                     <ul class="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-4">
                         <li class="flex items-start"><span class="text-[#3A0CA3] font-bold mr-2">✔</span> Grupo "Encontrar um Emprego Melhor"</li>
-                        <li class="flex items-start"><span class="text-[#3A0CA3] font-bold mr-2">✔</span> Preparação de currículo e entrevistas de emprego</li>
-                        <li class="flex items-start"><span class="text-[#3A0CA3] font-bold mr-2">✔</span> Uso estratégico do LinkedIn</li>
-                        <li class="flex items-start"><span class="text-[#3A0CA3] font-bold mr-2">✔</span> Carreiras em alta e Busca Acelerada de Emprego</li>
-                        <li class="flex items-start"><span class="text-[#3A0CA3] font-bold mr-2">✔</span> Comportamento ético e profissional</li>
-                        <li class="flex items-start"><span class="text-[#3A0CA3] font-bold mr-2">✔</span> Profissões e suas características</li>
-                        <li class="flex items-start"><span class="text-[#3A0CA3] font-bold mr-2">✔</span> Como progredir na carreira</li>
+                        <li class="flex items-start"><span class="text-[#3A0CA3] font-bold mr-2">✔</span> Preparação de currículo e entrevistas</li>
+                        <li class="flex items-start"><span class="text-[#3A0CA3] font-bold mr-2">✔</span> Uso do LinkedIn</li>
+                        <li class="flex items-start"><span class="text-[#3A0CA3] font-bold mr-2">✔</span> Carreiras em alta</li>
+                        <li class="flex items-start"><span class="text-[#3A0CA3] font-bold mr-2">✔</span> Comportamento profissional</li>
                     </ul>
+                </div>
+            </section>
+
+            <!-- Empreendedorismo -->
+            <section id="empreendedorismo" class="scroll-mt-20">
+                <div class="bg-white rounded-lg shadow-lg p-8">
+                    <h2 class="text-3xl font-bold text-[#7209B7] mb-4">💡 Empreendedorismo</h2>
+                    <p class="text-gray-600 mb-6">Estimular iniciativa e criação de negócios para gerar renda e desenvolvimento local.</p>
+                    <ul class="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-4">
+                        <li class="flex items-start"><span class="text-[#7209B7] font-bold mr-2">✔</span> Grupo "Iniciar e Melhorar meu Negócio"</li>
+                        <li class="flex items-start"><span class="text-[#7209B7] font-bold mr-2">✔</span> Como começar a gerar renda</li>
+                        <li class="flex items-start"><span class="text-[#7209B7] font-bold mr-2">✔</span> Abrir um pequeno negócio</li>
+                        <li class="flex items-start"><span class="text-[#7209B7] font-bold mr-2">✔</span> SEBRAE: Aprenda a Empreender</li>
+                        <li class="flex items-start"><span class="text-[#7209B7] font-bold mr-2">✔</span> Legalizar seu negócio (MEI)</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Finanças -->
+            <section id="financas" class="scroll-mt-20">
+                <div class="bg-white rounded-lg shadow-lg p-8">
+                    <h2 class="text-3xl font-bold text-[#4895EF] mb-4">💰 Finanças</h2>
+                    <p class="text-gray-600 mb-6">Ensinar gestão financeira pessoal e planejamento para o futuro.</p>
+                    <ul class="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-4">
+                        <li class="flex items-start"><span class="text-[#4895EF] font-bold mr-2">✔</span> Grupo "Finanças Pessoais"</li>
+                        <li class="flex items-start"><span class="text-[#4895EF] font-bold mr-2">✔</span> Orçamento doméstico</li>
+                        <li class="flex items-start"><span class="text-[#4895EF] font-bold mr-2">✔</span> Administrar cartões de crédito</li>
+                        <li class="flex items-start"><span class="text-[#4895EF] font-bold mr-2">✔</span> Investimentos e previdência</li>
+                        <li class="flex items-start"><span class="text-[#4895EF] font-bold mr-2">✔</span> Preparar-se para aposentadoria</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Saúde Emocional -->
+            <section id="saude" class="scroll-mt-20">
+                <div class="bg-white rounded-lg shadow-lg p-8">
+                    <h2 class="text-3xl font-bold text-[#4CC9F0] mb-4">❤️ Saúde Emocional</h2>
+                    <p class="text-gray-600 mb-6">Promover bem-estar mental e emocional, com dicas de resiliência e gestão do estresse.</p>
+                    <ul class="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-4">
+                        <li class="flex items-start"><span class="text-[#4CC9F0] font-bold mr-2">✔</span> Grupo "Resiliência Emocional"</li>
+                        <li class="flex items-start"><span class="text-[#4CC9F0] font-bold mr-2">✔</span> Cuidar da saúde emocional e física</li>
+                        <li class="flex items-start"><span class="text-[#4CC9F0] font-bold mr-2">✔</span> Controlar estresse e raiva</li>
+                        <li class="flex items-start"><span class="text-[#4CC9F0] font-bold mr-2">✔</span> Limitar tempo de tela</li>
+                        <li class="flex items-start"><span class="text-[#4CC9F0] font-bold mr-2">✔</span> Melhorar relacionamentos</li>
+                    </ul>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <footer class="bg-white mt-16 py-6 border-t">
+        <div class="container mx-auto text-center text-gray-500">
+            <p>&copy; 2024 Desenvolvimento Local</p>
+        </div>
+    </footer>
+
+    <script>
+        // Ativar link da seção ao rolar
+        document.addEventListener('DOMContentLoaded', () => {
+            const sections = document.querySelectorAll('section[id]');
+            const navLinks = document.querySelectorAll('nav a.nav-link');
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        navLinks.forEach(link => {
+                            link.classList.toggle('active', link.getAttribute('href').substring(1) === entry.target.id);
+                        });
+                    }
+                });
+            }, { rootMargin: '-50% 0px -50% 0px' });
+
+            sections.forEach(section => observer.observe(section));
+        });
+    </script>
+
+</body>
+</html>
                 </div>
             </section>
             
